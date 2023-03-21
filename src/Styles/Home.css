@@ -1,0 +1,506 @@
+#video {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+* {
+    /* border: 1px solid black; */
+}
+
+
+
+.container__video {
+    width: 100%;
+    padding-top: 70px;
+    position: relative;
+
+}
+
+.activeShadow {
+    z-index: 1;
+    opacity: 0.5
+}
+
+
+.main__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    margin: unset;
+}
+
+.activeBox {
+    z-index: -1;
+}
+
+
+
+.main__container .box-car {
+    width: 25%;
+    padding: 20px 20px;
+    background: #f0f3f3;
+}
+
+
+.box-car .inf__car {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 0 20px;
+    text-align: center;
+    background: white;
+
+}
+
+.box-car .img__car {
+    width: 100%;
+    text-align: center;
+    object-fit: cover;
+    padding: 0 50px;
+    background: white;
+
+}
+
+.box-car .img__car img {
+    width: 100%;
+    height: 160px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.box-car .title__car {
+    padding: 0 20px 0 20px;
+    font-size: 28px;
+    background: white;
+
+}
+
+.box-car .title__car p {
+    font-size: 15px;
+    color: #92A0B2;
+}
+
+
+
+.title__car .inf__car {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.inf__car .inf-vehicles p {
+    font-size: 13px;
+    margin: 0;
+    color: black;
+
+
+}
+
+.inf__car .inf-vehicles span {
+    font-size: 25px;
+}
+
+.inf__car .inf-number p {
+    font-size: 13px;
+    margin: 0;
+    color: black;
+}
+
+.inf__car .inf-number span {
+    font-size: 25px;
+    text-align: center;
+}
+
+.inf__car .inf-distance p {
+    font-size: 13px;
+    margin: 0;
+    color: black;
+
+}
+
+.inf__car .inf-distance span {
+    font-size: 25px;
+    text-align: center;
+}
+
+.box-car .price__car {
+    padding: 20px 20px 10px 20px;
+    font-size: 25px;
+    background: white;
+
+}
+
+.box-car .btn__car {
+    padding: 0 10px 25px 10px;
+    width: 100%;
+    font-size: 15px;
+    background: white;
+
+}
+
+.btn__car .deposit {
+    padding: 15px;
+    width: 48%;
+    background: #1464f4;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.btn__car .detail {
+    padding: 15px;
+    width: 48%;
+    border-radius: 5px;
+    background: white;
+    color: #1464f4;
+    border: 1px solid #1464f4;
+    outline: none;
+    transition: 0.3s;
+}
+
+.btn__car .deposit:hover {
+    background: white;
+    color: #1464f4;
+    border: 1px solid #1464f4;
+}
+
+.btn__car .detail:hover {
+    background: #1464f4;
+    color: white;
+}
+
+.icon__car {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 50px;
+    color: #b0c0c0;
+    padding: 10px;
+    background: #f0f3f3;
+}
+
+.icon__car .prev {
+    /* clip-path: circle(50%); */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+}
+
+
+
+.icon__car .next {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.icon__car .next:hover {
+    background: white;
+    color: #1464f4;
+}
+
+.menu__content {
+    width: 320px;
+    max-height: 110%;
+    position: absolute;
+    top: -65px;
+    right: 0;
+    padding-top: 70px;
+    background: white;
+    overflow: scroll;
+    opacity: 0;
+    position: fixed;
+    transition: 0.2s;
+
+}
+
+* {
+    border: 1px solid black;
+}
+
+.menu__content.activemenu {
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.menu__content .icon-cross {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    padding: 10px 40px 10px 0;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+
+.menu__content .inf-content p {
+    padding: 10px 0 10px 30px;
+    font-size: 13px;
+    margin: 10px 15px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.menu__content .inf-content .text {
+    padding: 0 0 15px 10px;
+    font-size: 18px;
+}
+
+.menu__content .inf-content {
+    margin-bottom: 20px;
+}
+
+.menu__content .inf-content p:hover {
+    border-radius: 3px;
+    background: #b8cffd;
+    color: #1464f4;
+}
+
+
+
+.container__moto {
+    background: #f0f3f3;
+    position: relative;
+}
+
+.container__moto .menu-moto {
+    width: 100%;
+    padding: 0 0 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-moto .nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-moto .nav-menu li:first-child {
+    color: #1464f4;
+    font-size: 20px;
+}
+
+
+
+.menu-moto .nav-menu .nav-item {
+    margin: 0 48px 0 0;
+    font-size: 14px;
+}
+
+
+
+.container__moto .moto-electric {
+    background: #f0f3f3;
+}
+
+ul.list-moto {
+    margin-bottom: unset;
+}
+
+
+.moto-electric {
+    width: 100%;
+}
+
+.moto-electric .list-moto {
+    display: flex;
+    list-style: none;
+    margin: unset;
+}
+
+
+.moto-electric .list-moto .box-moto {
+    width: 24%;
+    margin: 0 30px 0 0;
+    background: white;
+    padding: 0 10px 20px 10px;
+
+}
+
+
+.moto .img-moto img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.moto .inf-moto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.tab-content .inf-moto p {
+    color: #92A0B2;
+}
+
+.moto .price-moto {
+    margin-bottom: 25px;
+}
+
+.moto .price-moto h5 {
+    font-size: 18px;
+}
+
+.container__pin {
+    margin-top: 25px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container__pin .battery-item {
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.battery-item h1 {
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.battery-item p {
+    text-align: center;
+    padding: 0 235px;
+}
+
+
+.battery-items {
+    height: 100%;
+    display: flex;
+    margin: 0 30px;
+
+}
+
+.battery-item .item-show {
+    width: 50%;
+}
+
+.battery-item .item-show .item-img {
+    object-fit: cover;
+}
+
+.battery-items img {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.item-show .item-inf {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+.item-show .item-inf .btn__car {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.item-show .item-inf p {
+    font-size: 21px;
+    color: #1F2125;
+}
+
+.item-inf .btn__car .detail {
+    width: 190px;
+    height: 40px;
+    padding: 5px 0 10px;
+    border-radius: 2px;
+}
+
+.container__device {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.container__device .img-device {
+    width: 40%;
+    margin: 0 100px;
+}
+
+.container__device .inf-device {
+    width: 40%;
+    margin: -110px 0 0 0
+}
+
+.img-device img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 80px 40px 40px 40px;
+}
+
+.inf-device h3 {
+    width: 170px;
+}
+
+.inf-device .btn__car {
+    height: 70px;
+}
+
+.container__service {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+
+}
+
+.img-service img {
+    padding: 0 20px 40px 20px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.container__service .inf-service {
+    position: absolute;
+    width: 400px;
+    top: 20px;
+    left: 40px;
+    font-size: 14px;
+}
+
+.inf-service span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.inf-service .btn__car {
+    margin: 30px 0;
+    width: 480px;
+    border-radius: 1px;
+}

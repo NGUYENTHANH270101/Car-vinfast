@@ -1,0 +1,80 @@
+.container__video {
+    width: 100%;
+    padding-top: 70px;
+    position: relative;
+}
+
+.container__video .img-cardetail {
+    width: 100%;
+    text-align: center;
+    /* padding: 0 40px; */
+
+
+}
+
+.img-cardetail img {
+    object-fit: cover;
+    padding: 0 0 40px 40px;
+    width: 100%;
+    height: auto;
+}
+
+.container__video .cardetail-inf {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 0 0 40px;
+    background: rgba(31, 33, 37, .5);
+    position: absolute;
+    bottom: 40px;
+    margin: 0 42px;
+}
+
+
+.cardetail-inf p {
+    font-size: 14px;
+}
+
+.cardetail-inf span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cardetail-inf .btn__cardetail {
+    width: 250px;
+    height: 70px;
+    border-radius: 1px;
+    padding: 7px 0 0 0;
+
+}
+
+
+
+.btn__cardetail .deposit {
+    width: 100%;
+    padding: 15px;
+    background: #1464f4;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    color: white;
+
+}
+
+.btn__cardetail .deposit:hover {
+    background: white;
+    color: #1464f4;
+    border: 1px solid #1464f4;
+}
+
+
+
+
+* {
+    /* border: 1px solid black; */
+}

@@ -1,0 +1,103 @@
+* {
+    /* border: 1px solid black; */
+}
+
+:root {
+    --primary-color: #1464f4
+}
+
+.header {
+    position: relative;
+}
+
+.header_menu {
+    background: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 16px 30px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.img__logo img {
+    width: 130px;
+    height: 50px;
+    padding: 10px 15px;
+}
+
+
+
+.menu__navbar {
+    height: 70px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu__navbar-list a {
+    text-decoration: none;
+    color: #3c3c3c;
+    margin-right: 50px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.box__car {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.box__car .btn {
+    border: none;
+    outline: none;
+}
+
+.btn button {
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 16px;
+    font-weight: 100;
+    transition: 0.3s;
+
+}
+
+.btn .btn__register {
+    background: var(--primary-color);
+    padding: 15px 24px;
+    color: white;
+    border-radius: 5px;
+    margin: 0px 12px 0 25px;
+}
+
+.btn .btn__register:hover {
+    background: white;
+    border: 1px solid var(--primary-color);
+    /* background-color: var(--primary-color); */
+    color: var(--primary-color);
+}
+
+.btn .btn__account:hover {
+    color: var(--primary-color);
+}
+
+.box__car .icon__menu {
+    padding: 0 5px 0 5px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.box__car .icon__menu:hover {
+    color: var(--primary-color);
+    background: rgba(0, 204, 255, 0.103);
+}
